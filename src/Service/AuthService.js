@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const ACCOUNT_BASE_REST_API_URL = "http://localhost:8080/Auth/register";
+const ACCOUNT_BASE_REST_API_URL = "http://ec2-65-2-36-88.ap-south-1.compute.amazonaws.com:8080/Auth/register";
 
-const LOGIN_BASE_REST_API_URL = "http://localhost:8080/Auth/login";
+const LOGIN_BASE_REST_API_URL = "http://ec2-65-2-36-88.ap-south-1.compute.amazonaws.com:8080/Auth/login";
 
 export const login = (usernameOrEmail, password) =>
   axios.post(LOGIN_BASE_REST_API_URL, { usernameOrEmail, password });
